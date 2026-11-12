@@ -1,0 +1,38 @@
+{
+  "id": "004-dica-bagagem-na-moto",
+  "titulo": "Como arrumar a bagagem na moto",
+  "local": "Dica de viagem",
+  "slides": [
+    {
+      "foto": "motorcycle touring luggage",
+      "titulo": "Bagagem na moto sem sofrimento",
+      "texto": "5 regras simples pra viajar com segurança e sem estresse."
+    },
+    {
+      "foto": "motorcycle panniers",
+      "titulo": "1. Peso baixo e centralizado",
+      "texto": "O mais pesado vai embaixo e perto do centro da moto. Peso alto e lá atrás deixa a moto instável nas curvas."
+    },
+    {
+      "foto": "motorcycle saddlebags",
+      "titulo": "2. Divida dos dois lados",
+      "texto": "Alforjes ou baús laterais com peso parecido nos dois lados. Moto desequilibrada cansa o piloto e puxa pra um lado."
+    },
+    {
+      "foto": "motorcycle rain",
+      "titulo": "3. Chuva e documentos à mão",
+      "texto": "Capa de chuva, documentos e carteira num lugar de acesso rápido. Ninguém quer desmontar a bagagem no acostamento."
+    },
+    {
+      "foto": "motorcycle tire",
+      "titulo": "4. Calibre pra carga",
+      "texto": "Com garupa ou bagagem, use a calibragem indicada pra carga no manual da moto. E confira a regulagem da suspensão."
+    }
+  ],
+  "fechamento": {
+    "titulo": "5. Teste antes de ir",
+    "texto": "Dê uma volta curta com tudo montado antes da viagem. Se algo balança, ajuste em casa, não na estrada."
+  },
+  "legenda": "Bagagem na moto: o básico que faz diferença 🧳🏍️\n\nMuita viagem fica mais cansativa (e mais perigosa) só por causa de bagagem mal arrumada. Essas 5 regras resolvem quase tudo.\n\nQual é o item que nunca falta no seu alforje? 👇",
+  "hashtags": "#dicasdeviagem #viagemdemoto #mototurismo #motociclismo #bagagem #alforje #motoviagem #alforjeaberto"
+}
