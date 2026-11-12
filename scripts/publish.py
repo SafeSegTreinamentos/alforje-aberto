@@ -74,6 +74,19 @@ def colorido(img):
     return sd + 0.3 * mu
 
 
+def sepia(img):
+    """Foto antiga tonalizada: quase tudo num único tom quente."""
+    import math
+    hs = [h for h, sat, v in img.resize((80, 80)).convert("HSV").getdata() if sat > 40 and v > 40]
+    if len(hs) < 400:
+        return False
+    c = sum(math.cos(h / 255 * 2 * math.pi) for h in hs) / len(hs)
+    s_ = sum(math.sin(h / 255 * 2 * math.pi) for h in hs) / len(hs)
+    espalhamento = 1 - math.hypot(c, s_)
+    media = (math.degrees(math.atan2(s_, c)) % 360)
+    return espalhamento < 0.03 and media < 60
+
+
 def buscar_foto(termo, usadas):
     params = {
         "action": "query", "format": "json", "generator": "search",
@@ -98,7 +111,7 @@ def buscar_foto(termo, usadas):
         img = requests.get(info.get("thumburl") or info["url"], headers=UA, timeout=120)
         img.raise_for_status()
         foto = Image.open(BytesIO(img.content)).convert("RGB")
-        if colorido(foto) < 18:  # descarta preto e branco / sépia / foto antiga
+        if colorido(foto) < 15 or sepia(foto):  # descarta preto e branco / sépia / foto antiga
             continue
         usadas.add(p["title"])
         return foto, f"{autor[:60]} ({licenca})"
