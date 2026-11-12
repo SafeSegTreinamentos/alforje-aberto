@@ -6,34 +6,34 @@
     {
       "foto": "Trollstigen",
       "titulo": "Trollstigen",
-      "texto": "A Escada dos Trolls: a estrada mais famosa da Noruega."
+      "texto": "A Escada dos Trolls. Nome de lenda, estrada de verdade, na Noruega."
     },
     {
       "foto": "Trollstigen hairpin",
-      "titulo": "11 curvas em grampo",
-      "texto": "A estrada sobe a encosta em 11 curvas fechadas, com cachoeiras descendo pela montanha ao lado da pista."
+      "titulo": "11 grampos",
+      "texto": "A estrada sobe a encosta em 11 curvas fechadas, com cachoeira caindo do lado da pista. Você ouve a água mesmo de capacete."
     },
     {
       "foto": "Trollstigen viewpoint",
-      "titulo": "O mirante",
-      "texto": "No alto, plataformas de observação mostram toda a escada de curvas lá embaixo. Parada obrigatória pra foto.",
+      "titulo": "Lá de cima",
+      "texto": "No topo, mirantes mostram a escada inteira lá embaixo. É aquele momento de desligar a moto e ficar em silêncio.",
       "moto": true
     },
     {
       "foto": "Geiranger fjord",
-      "titulo": "Roteiro completo",
-      "texto": "Faz parte da Rota Turística Nacional Geiranger–Trollstigen, que ainda passa pelo famoso fiorde de Geiranger."
+      "titulo": "Rumo ao fiorde",
+      "texto": "A rota segue até Geiranger, um dos fiordes mais famosos do país. Montanha, água e estrada no mesmo dia."
     },
     {
       "foto": "Norway mountain road snow",
-      "titulo": "Quando ir",
-      "texto": "Fecha no inverno por causa da neve. Normalmente abre entre o fim da primavera e o outono, então planeje pro verão norueguês."
+      "titulo": "Só no verão",
+      "texto": "Fecha no inverno por causa da neve. Normalmente abre do fim da primavera ao outono. Viagem pra planejar com calma."
     }
   ],
   "fechamento": {
     "titulo": "Fiordes de moto",
-    "texto": "Salva e marca quem ia contigo pra Noruega."
+    "texto": "Salva e marca quem iria contigo pra Noruega."
   },
-  "legenda": "Trollstigen, Noruega 🇳🇴🏍️\n\n11 curvas em grampo, cachoeiras do lado da pista e fiordes no caminho. A Escada dos Trolls é daquelas estradas que parecem saídas de um filme.\n\n🗓️ Fecha no inverno: vá no verão norueguês\n\nNoruega de moto: sonho ou loucura? 👇",
+  "legenda": "Uma estrada com nome de lenda, cachoeiras do lado da pista e um fiorde no fim do caminho. 🇳🇴\n\nA Trollstigen sobe a montanha em 11 grampos, e lá de cima a vista parece cena de filme. Depois, a rota segue até Geiranger.\n\n🗓️ Fecha no inverno: planeje pro verão norueguês\n\nNoruega de moto: sonho ou loucura? 👇",
   "hashtags": "#trollstigen #noruega #fiordes #geiranger #viagemdemoto #mototurismo #motociclismo #estradasdomundo #alforjeaberto"
 }

@@ -58,6 +58,22 @@ def limpar_html(s):
     return html.unescape(s).strip()
 
 
+BLOQUEIO = ("moto guzzi", "guzzi", "studio", "museum", "museo", "exhibition", "salon", "eicma", "map", "karte", "mapa", "logo", "1900", "1910", "1920", "1930", "1940", "1950")
+
+
+def colorido(img):
+    """Métrica de colorfulness (Hasler & Süsstrunk)."""
+    import statistics
+    pequeno = img.resize((80, 80))
+    rg, yb = [], []
+    for r, g, b in pequeno.getdata():
+        rg.append(r - g)
+        yb.append(0.5 * (r + g) - b)
+    sd = (statistics.pstdev(rg) ** 2 + statistics.pstdev(yb) ** 2) ** 0.5
+    mu = (statistics.mean(rg) ** 2 + statistics.mean(yb) ** 2) ** 0.5
+    return sd + 0.3 * mu
+
+
 def buscar_foto(termo, usadas):
     params = {
         "action": "query", "format": "json", "generator": "search",
@@ -76,10 +92,16 @@ def buscar_foto(termo, usadas):
         meta = info.get("extmetadata", {})
         autor = limpar_html(meta.get("Artist", {}).get("value", "")) or "autor desconhecido"
         licenca = limpar_html(meta.get("LicenseShortName", {}).get("value", "")) or "licença livre"
+        titulo_arq = p["title"].lower()
+        if any(b in titulo_arq for b in BLOQUEIO):
+            continue
         img = requests.get(info.get("thumburl") or info["url"], headers=UA, timeout=120)
         img.raise_for_status()
+        foto = Image.open(BytesIO(img.content)).convert("RGB")
+        if colorido(foto) < 18:  # descarta preto e branco / sépia / foto antiga
+            continue
         usadas.add(p["title"])
-        return Image.open(BytesIO(img.content)).convert("RGB"), f"{autor[:60]} ({licenca})"
+        return foto, f"{autor[:60]} ({licenca})"
     return None, None
 
 
@@ -291,7 +313,7 @@ def main():
         foto, cred = None, None
         # capa e slides ímpares: tenta primeiro uma foto com moto no lugar
         if i == 1 or s.get("moto"):
-            for termo in (f"{s['foto']} motorcycle road", f"{post['titulo']} motorcycle road", f"{post['titulo']} motorcyclist"):
+            for termo in (f"{s['foto']} motorcycle", f"{post['titulo']} motorcycle", f"{post['titulo']} motorcyclist"):
                 foto, cred = buscar_foto(termo, usadas)
                 if foto is not None:
                     break
