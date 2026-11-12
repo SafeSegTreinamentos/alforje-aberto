@@ -16,7 +16,8 @@
     {
       "foto": "Serra do Mar Paraná",
       "titulo": "O caminho",
-      "texto": "Sai da região de Quatro Barras e desce a serra rumo a Morretes e Antonina. Ao longo da estrada há recantos com mirantes e áreas de parada."
+      "texto": "Sai da região de Quatro Barras e desce a serra rumo a Morretes e Antonina. Ao longo da estrada há recantos com mirantes e áreas de parada.",
+      "moto": true
     },
     {
       "foto": "Morretes Paraná",

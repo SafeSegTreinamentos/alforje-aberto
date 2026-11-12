@@ -290,8 +290,8 @@ def main():
     for i, s in enumerate(slides, 1):
         foto, cred = None, None
         # capa e slides ímpares: tenta primeiro uma foto com moto no lugar
-        if i == 1 or i % 2 == 1 or s.get("moto"):
-            for termo in (f"{s['foto']} motorcycle", f"{post['titulo']} motorcycle", f"{post['titulo']} motorbike"):
+        if i == 1 or s.get("moto"):
+            for termo in (f"{s['foto']} motorcycle road", f"{post['titulo']} motorcycle road", f"{post['titulo']} motorcyclist"):
                 foto, cred = buscar_foto(termo, usadas)
                 if foto is not None:
                     break
