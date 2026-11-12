@@ -288,7 +288,15 @@ def main():
     slides = post["slides"]
     total = len(slides) + 1
     for i, s in enumerate(slides, 1):
-        foto, cred = buscar_foto(s["foto"], usadas)
+        foto, cred = None, None
+        # capa e slides ímpares: tenta primeiro uma foto com moto no lugar
+        if i == 1 or i % 2 == 1 or s.get("moto"):
+            for termo in (f"{s['foto']} motorcycle", f"{post['titulo']} motorcycle", f"{post['titulo']} motorbike"):
+                foto, cred = buscar_foto(termo, usadas)
+                if foto is not None:
+                    break
+        if foto is None:
+            foto, cred = buscar_foto(s["foto"], usadas)
         if foto is None:
             foto, cred = buscar_foto(post["titulo"], usadas)
         if foto is None and post.get("local"):
