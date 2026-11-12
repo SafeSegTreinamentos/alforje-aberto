@@ -124,9 +124,13 @@ def degrade(img, inicio=0.38):
 
 def cabecalho(d, n, total):
     f = fonte("Oswald.ttf", 30, 600)
-    d.text((60, 52), "ALFORJE ABERTO", font=f, fill=AMBAR)
     t = f"{n}/{total}"
-    d.text((W - 60 - d.textlength(t, font=f), 52), t, font=f, fill=CREME)
+    xt = W - 60 - d.textlength(t, font=f)
+    for dx, dy in ((2, 2), (0, 2), (2, 0), (-1, 1)):
+        d.text((60 + dx, 52 + dy), "ALFORJE ABERTO", font=f, fill=(0, 0, 0))
+        d.text((xt + dx, 52 + dy), t, font=f, fill=(0, 0, 0))
+    d.text((60, 52), "ALFORJE ABERTO", font=f, fill=AMBAR)
+    d.text((xt, 52), t, font=f, fill=CREME)
 
 
 def slide_foto(foto, titulo, texto, n, total, capa=False, local=None):
@@ -266,7 +270,11 @@ def main():
     for i, s in enumerate(slides, 1):
         foto, cred = buscar_foto(s["foto"], usadas)
         if foto is None:
-            foto, cred = (foto_capa, None) if foto_capa else buscar_foto(post["titulo"], usadas)
+            foto, cred = buscar_foto(post["titulo"], usadas)
+        if foto is None and post.get("local"):
+            foto, cred = buscar_foto(post["titulo"] + " " + post["local"].split(",")[0], usadas)
+        if foto is None and foto_capa:
+            foto, cred = foto_capa, None
         if foto is None:
             sys.exit(f"Nenhuma foto encontrada para: {s['foto']}")
         foto_capa = foto_capa or foto
