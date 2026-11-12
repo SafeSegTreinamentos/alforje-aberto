@@ -2,7 +2,11 @@ name: Publicar post do dia
 
 on:
   schedule:
-    - cron: "7 14 * * *"   # todo dia às 11h07 (horário de Brasília)
+    # 11h07 em Brasília; os horários seguintes são reserva caso o GitHub atrase/pule
+    - cron: "7 14 * * *"
+    - cron: "37 15 * * *"
+    - cron: "17 17 * * *"
+    - cron: "47 19 * * *"
   workflow_dispatch:
     inputs:
       teste:

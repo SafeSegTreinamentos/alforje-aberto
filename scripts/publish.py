@@ -265,6 +265,15 @@ def publicar(urls, legenda, token_usuario):
 # ---------------------------------------------------------------- principal
 def main():
     dry = os.environ.get("DRY_RUN") == "1"
+    hoje = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 3 * 3600))
+    if not dry and os.environ.get("FORCAR") != "1":
+        for f in PUBLICADOS.glob("*.json"):
+            pub = json.loads(f.read_text(encoding="utf-8")).get("publicado_em", "")
+            if pub:
+                t = time.mktime(time.strptime(pub, "%Y-%m-%d %H:%M UTC")) - time.timezone - 3 * 3600
+                if time.strftime("%Y-%m-%d", time.gmtime(t)) == hoje:
+                    print("Já saiu post hoje. Nada a fazer.")
+                    return
     arquivos = sorted(FILA.glob("*.json"))
     if not arquivos:
         sys.exit("Fila vazia: nenhum post para publicar.")
