@@ -164,6 +164,13 @@ def slide_final(titulo, texto, n, total):
     img = Image.new("RGB", (W, H), ASFALTO)
     d = ImageDraw.Draw(img)
     cabecalho(d, n, total)
+    logo = ROOT / "assets" / "logo.jpg"
+    if logo.exists():
+        lg = Image.open(logo).convert("RGB").resize((520, 520), Image.LANCZOS)
+        mask = Image.new("L", lg.size, 0)
+        ImageDraw.Draw(mask).ellipse([0, 0, 519, 519], fill=255)
+        img.paste(lg, ((W - 520) // 2, 120), mask)
+        return _texto_final(img, d, titulo, texto)
     # alforje estilizado
     cx, cy = W // 2, 430
     d.ellipse([cx - 46, cy - 250, cx + 46, cy - 158], fill=AMBAR)
@@ -175,9 +182,13 @@ def slide_final(titulo, texto, n, total):
     for bx in (cx - 82, cx + 56):
         d.rectangle([bx, cy - 50, bx + 26, cy + 90], fill=(92, 58, 31))
         d.rounded_rectangle([bx - 6, cy + 20, bx + 32, cy + 52], radius=4, outline=AMBAR, width=6)
+    return _texto_final(img, d, titulo, texto)
+
+
+def _texto_final(img, d, titulo, texto):
     ft = fonte("Oswald.ttf", 78, 700)
     fx = fonte("Inter.ttf", 38, 450)
-    y = 640
+    y = 700
     for l in quebrar(d, titulo.upper(), ft, W - 160):
         d.text(((W - d.textlength(l, font=ft)) / 2, y), l, font=ft, fill=CREME)
         y += int(ft.size * 1.1)
