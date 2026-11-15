@@ -1,0 +1,39 @@
+{
+  "id": "011-rio-santos",
+  "titulo": "Rodovia Rio-Santos",
+  "local": "Rio de Janeiro e São Paulo, Brasil",
+  "slides": [
+    {
+      "foto": "Rodovia Rio-Santos",
+      "titulo": "Serra de um lado, mar do outro",
+      "texto": "A Rio-Santos é curva atrás de curva com a Mata Atlântica à esquerda e o mar piscando à direita."
+    },
+    {
+      "foto": "Paraty centro histórico",
+      "titulo": "Paraty sem pressa",
+      "texto": "Moto estacionada, bota no calçamento de pedra e o casario colonial ao redor. Paraty pede pra gente desacelerar."
+    },
+    {
+      "foto": "Trindade Paraty",
+      "titulo": "Cheiro de maresia",
+      "texto": "Entre uma praia e outra, a estrada sobe e desce o morro. Janela da viseira aberta e cheiro de mar e mata molhada.",
+      "moto": true
+    },
+    {
+      "foto": "Ubatuba praia",
+      "titulo": "Praia em cada curva",
+      "texto": "No litoral norte paulista, Ubatuba tem tanta praia que dá pra parar numa diferente a cada saída de curva."
+    },
+    {
+      "foto": "Ilhabela",
+      "titulo": "Fora de temporada",
+      "texto": "Feriado e verão lotam a estrada. Vai fora de temporada, cedo, e com capa de chuva: a serra chove quando quer."
+    }
+  ],
+  "fechamento": {
+    "titulo": "O litoral é teu",
+    "texto": "Salva esse post e escolhe tua praia de parada."
+  },
+  "legenda": "Curva, mar, curva, mata, curva, praia. E tudo de novo. 🌊\n\nA Rio-Santos costura o litoral entre o Rio e São Paulo, passando por Paraty, Trindade e Ubatuba. É estrada pra rodar devagar, com a viseira aberta e o cheiro de maresia.\n\n📍 Trecho da BR-101 entre Rio de Janeiro e Santos\n🌧️ Serra do Mar chove muito: pista molhada pede cuidado\n🚗 Evite feriadões: o trânsito trava\n\nQual praia te faria parar a moto? 👇",
+  "hashtags": "#riosantos #paraty #ubatuba #litoralnorte #costaverde #viagemdemoto #mototurismo #motociclismo #estradasdobrasil #alforjeaberto"
+}

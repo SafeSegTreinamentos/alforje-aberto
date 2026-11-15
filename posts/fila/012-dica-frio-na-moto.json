@@ -1,0 +1,39 @@
+{
+  "id": "012-dica-frio-na-moto",
+  "titulo": "Frio na moto: vista em camadas",
+  "local": "Dica de viagem",
+  "slides": [
+    {
+      "foto": "motorcyclist winter road",
+      "titulo": "Frio de serra",
+      "texto": "Saiu de manhã cedo, a serra estava linda e em meia hora as mãos travaram. Dá pra evitar. 5 lições do frio."
+    },
+    {
+      "foto": "thermal underwear",
+      "titulo": "1. Camadas finas",
+      "texto": "Várias camadas finas aquecem mais que um casacão. Primeira pele térmica, depois um fleece, por cima a jaqueta."
+    },
+    {
+      "foto": "fog mountain road",
+      "titulo": "2. Corta o vento",
+      "texto": "A 80 por hora o vento rouba calor muito rápido. Forro corta-vento ou capa de chuva por cima já muda o jogo.",
+      "moto": true
+    },
+    {
+      "foto": "winter gloves",
+      "titulo": "3. Mãos e pescoço",
+      "texto": "Luva de inverno e bandana ou balaclava. É por ali que o frio entra primeiro, e mão gelada não sente embreagem."
+    },
+    {
+      "foto": "hot coffee cup",
+      "titulo": "4. Para pro café",
+      "texto": "Parada a cada uma ou duas horas. Café quente, mexer o corpo, sentir a ponta dos dedos de novo. Faz parte da viagem."
+    }
+  ],
+  "fechamento": {
+    "titulo": "5. Tira quando esquentar",
+    "texto": "Desceu a serra e o sol abriu? Para e tira uma camada. Suar também esfria depois."
+  },
+  "legenda": "Todo mundo que viaja de moto já sentiu aquele frio que entra pelos ossos. 🥶\n\nSerra bonita, céu limpo, termômetro baixo. E aí a gente descobre que jaqueta sozinha não dá conta. A solução é simples: camadas e vento lá fora.\n\n🧤 Mãos e pescoço protegidos primeiro\n☕ Parar pro café também é segurança\n\nQual foi o frio mais bravo que tu já pegou em cima da moto? 👇",
+  "hashtags": "#dicasdeviagem #viagemdemoto #mototurismo #motociclismo #frio #serra #equipamento #motoviagem #alforjeaberto"
+}
