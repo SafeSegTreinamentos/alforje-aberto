@@ -1,0 +1,39 @@
+{
+  "id": "016-chapada-diamantina",
+  "titulo": "Chapada Diamantina",
+  "local": "Bahia, Brasil",
+  "slides": [
+    {
+      "foto": "Chapada Diamantina",
+      "titulo": "Chapada Diamantina",
+      "texto": "No meio da Bahia, o sertão de repente vira montanha. Paredões, rios cor de chá e um céu que parece maior que o normal."
+    },
+    {
+      "foto": "Lençóis Bahia",
+      "titulo": "Terra de garimpo",
+      "texto": "Lençóis nasceu da corrida dos diamantes. Casario colorido, ladeira de pedra e a moto descansando na pracinha depois da estrada."
+    },
+    {
+      "foto": "Morro do Pai Inácio",
+      "titulo": "Fim de tarde lá em cima",
+      "texto": "Encosta a moto, sobe a trilha curta do Pai Inácio e espera o sol cair. O vale inteiro fica laranja na tua frente.",
+      "moto": true
+    },
+    {
+      "foto": "Cachoeira da Fumaça",
+      "titulo": "Água que vira vento",
+      "texto": "Na Fumaça, a queda é tão alta que a água se desfaz no ar antes de chegar lá embaixo. Coisa de outro mundo."
+    },
+    {
+      "foto": "Poço Azul Chapada Diamantina",
+      "titulo": "Azul de gruta",
+      "texto": "Dentro das grutas, poços de água tão clara que parecem acesos. Vale reservar um dia só pra isso."
+    }
+  ],
+  "fechamento": {
+    "titulo": "Fica uns dias",
+    "texto": "Chapada não é bate e volta. Salva o post e separa pelo menos um feriadão."
+  },
+  "legenda": "Tem lugar que faz a gente desligar o motor e ficar quieto só olhando. 🌄\n\nA Chapada Diamantina guarda cidades de garimpo, morros de topo achatado e cachoeiras que somem no vento. Chegar de moto, vendo o sertão virar serra pelo para-brisa, é parte da graça.\n\n📍 Centro da Bahia, acesso a partir de Salvador pela BR-242\n☀️ Época mais seca: de abril a setembro\n⛽ Postos espaçados em alguns trechos: abastece sempre que puder\n\nTu prefere cachoeira ou mirante no fim do dia? 👇",
+  "hashtags": "#chapadadiamantina #lencois #bahia #morrodopaiinacio #viagemdemoto #mototurismo #motociclismo #estradasdobrasil #alforjeaberto"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "017-roteiro-recife-maceio",
+  "titulo": "Recife a Maceió pelo litoral",
+  "local": "Pernambuco e Alagoas, Brasil",
+  "slides": [
+    {
+      "foto": "Maragogi",
+      "titulo": "Litoral de mar verde",
+      "texto": "Sai de Recife com cheiro de maresia e vai costurando o litoral até Maceió. Sem pressa, que o mar aqui pede parada."
+    },
+    {
+      "foto": "Porto de Galinhas",
+      "titulo": "Primeira parada",
+      "texto": "Porto de Galinhas chega rápido. Na maré baixa, piscinas naturais quentinhas e peixe colorido nadando no pé."
+    },
+    {
+      "foto": "Maragogi Alagoas",
+      "titulo": "Caribe de Alagoas",
+      "texto": "Cruzando a divisa, Maragogi. Água num verde que nem parece real e a moto parada de frente pro coqueiral.",
+      "moto": true
+    },
+    {
+      "foto": "São Miguel dos Milagres",
+      "titulo": "Rota dos Milagres",
+      "texto": "Depois, a Rota Ecológica: vilas tranquilas, estrada estreita entre coqueiros e o mar sempre ali do lado."
+    },
+    {
+      "foto": "Maceió Pajuçara",
+      "titulo": "Chegada em Maceió",
+      "texto": "No fim, Pajuçara e Ponta Verde. Tapioca na orla, jangada no horizonte e o corpo pedindo um mergulho."
+    }
+  ],
+  "fechamento": {
+    "titulo": "Litoral sem pressa",
+    "texto": "Salva o roteiro e escolhe as marés antes de sair: elas mandam no passeio."
+  },
+  "legenda": "Tem roteiro que é mais mergulho do que quilômetro. 🌊\n\nRecife → Porto de Galinhas → Maragogi → São Miguel dos Milagres → Maceió. Um litoral de piscinas naturais, coqueiros e vilas de pescador, rodando com o mar sempre no canto do olho.\n\n🌊 Confere a tábua de marés: as piscinas aparecem na maré baixa\n🧴 Sol forte o ano todo: protetor, água e roupa ventilada\n🌧️ Entre abril e julho chove mais na região\n\nQual praia do Nordeste tu ainda quer conhecer de moto? 👇",
+  "hashtags": "#portodegalinhas #maragogi #saomigueldosmilagres #maceio #recife #nordeste #viagemdemoto #mototurismo #roteirodemoto #alforjeaberto"
+}

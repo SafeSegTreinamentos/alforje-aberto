@@ -1,0 +1,39 @@
+{
+  "id": "020-dica-revisao-antes-da-viagem",
+  "titulo": "Antes de sair: a moto agradece",
+  "local": "Dica de viagem",
+  "slides": [
+    {
+      "foto": "motorcycle touring luggage",
+      "titulo": "Antes da estrada",
+      "texto": "A viagem começa na garagem, uns dias antes de sair. Meia hora olhando a moto com calma evita um dia inteiro parado no acostamento."
+    },
+    {
+      "foto": "motorcycle tire tread",
+      "titulo": "1. Pneu",
+      "texto": "Calibra com o pneu frio e na pressão de carga. Olha o sulco e procura corte ou bolha. É só ele que segura a gente no chão."
+    },
+    {
+      "foto": "motorcycle chain sprocket",
+      "titulo": "2. Corrente",
+      "texto": "Limpa, lubrifica e confere a folga. Corrente seca ou frouxa rouba força e pode deixar a gente na mão longe de casa.",
+      "moto": true
+    },
+    {
+      "foto": "motorcycle disc brake",
+      "titulo": "3. Freio e óleo",
+      "texto": "Pastilha com material, fluido no nível, óleo do motor em dia. Se a troca vence durante a viagem, troca antes."
+    },
+    {
+      "foto": "motorcycle headlight",
+      "titulo": "4. Luzes",
+      "texto": "Farol, lanterna, setas e luz de freio. Pede pra alguém olhar atrás enquanto tu aciona tudo. Na neblina, isso é vida."
+    }
+  ],
+  "fechamento": {
+    "titulo": "5. Kit na bagagem",
+    "texto": "Câmara ou kit de reparo, ferramenta básica, abraçadeira e fita. Pequeno, leve e salva viagem."
+  },
+  "legenda": "A melhor viagem é aquela que só para quando a gente quer parar. 🔧\n\nAntes de pegar a estrada, vale um ritual simples na garagem: pneu, corrente, freio, óleo e luzes. Coisa de meia hora que deixa a cabeça livre pra curtir a paisagem.\n\n🛞 Calibra com a moto carregada e o pneu frio\n🧰 Kit de reparo e ferramenta básica sempre no alforje\n\nQual item tu nunca esquece de checar antes de viajar? 👇",
+  "hashtags": "#dicasdeviagem #viagemdemoto #mototurismo #motociclismo #manutencao #revisao #motoviagem #segurancanamoto #alforjeaberto"
+}
